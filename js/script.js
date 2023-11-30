@@ -5,7 +5,7 @@ function initMap() {
     center: location
   });
   var marker = new google.maps.Marker({
-    position: location
+    position: location,
     map: map
   });
 }
