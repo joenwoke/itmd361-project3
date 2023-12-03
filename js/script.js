@@ -10,6 +10,24 @@ function initMap() {
     map: map
   });
   
+  var description =
+  '<div id="info">' +
+  "</div>" +
+  '<h1 id="infohead">Illinois Institute of Technology</h1>'
+  
+  var infowindow = new google.maps.InfoWindow({
+    content: description,
+    ariaLabel: "IIT",
+  });
+  
+  marker.addListener("click", () => {
+    infowindow.open({
+      anchor: marker,
+      map: map
+    });
+  });
+  
+  
   var trafficLayer = new google.maps.TrafficLayer();
   trafficLayer.setMap(map);
 }
