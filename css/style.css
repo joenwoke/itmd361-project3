@@ -153,3 +153,35 @@ nav ul li a:hover {
   width: 100%;
   background-color: white;
 }
+
+/* CSS styles for media query 1 - small screens */
+@media screen and (max-width: 767px) {
+  #map {
+    height: 300px;
+  }
+  
+  #content {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+  
+  nav ul li a {
+    padding: 15px 25px;
+  }
+}
+
+/* CSS styles for media query 2 - large screens */
+@media screen and (min-width: 768px) {
+  #map {
+    height: 500px;
+  }
+  
+  #content {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
